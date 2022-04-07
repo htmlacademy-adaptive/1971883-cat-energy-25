@@ -20,13 +20,13 @@
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
-              <a href="index.html">главная</a>
+              <a class="main-navigation__link" href="index.html">главная</a>
             </li>
             <li class="main-navigation__item">
-              <a href="catalog.html">каталог продукции</a>
+              <a class="main-navigation__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-navigation__item">
-              <a href="form.html">подбор программы</a>
+              <a class="main-navigation__link" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -34,13 +34,17 @@
     </header>
     <main class="main-container">
       <section class="promo">
-        <h1 class="promo__main-title">Функциональное
-          питание для котов
-        </h1>
-        <p class="promo__main-slogan">
-          Занялся собой? Займись котом!
-        </p>
-        <img src="img/promo-can.png" width="280" height="270" alt="Банка Cat energy pro со вкусом курицы.">
+        <div class="promo__container">
+          <img class="promo__background-cat" width="320" height="302" src="img/promo-background-cat.jpg" alt="Кот облизывается.">
+          <h1 class="promo__main-title">
+            Функциональное
+            питание для котов
+          </h1>
+          <p class="promo__main-slogan">
+            Занялся собой? Займись котом!
+          </p>
+          <img class="promo__product-image" src="img/promo-can.png" width="280" height="270" alt="Банка Cat energy pro со вкусом курицы.">
+        </div>
         <a class="promo__button-choose-programm" href="#">
           подобрать программу
         </a>
@@ -49,7 +53,7 @@
         <h2 class="visually-hidden">
           Выберите каталог
         </h2>
-        <div class="catalog-option">
+        <div class="choose-catalog__catalog-option catalog-option-weight-loss">
           <h3 class="catalog-option__title">
             похудение
           </h3>
@@ -64,7 +68,7 @@
             </svg>
           </a>
         </div>
-        <div class="catalog-option">
+        <div class="choose-catalog__catalog-option catalog-option-weight-gain">
           <h3 class="catalog-option__title">
             Набор массы
           </h3>
@@ -179,10 +183,10 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__link html-academy-link" href="#">
+        <a class="copyright__html-academy-link" href="#">
           HTML Academy
         </a>
-        <a class="copyright-link html-academy-logo-link" href="#">
+        <a class="copyright__html-academy-logo-link" href="#">
           HTML Academy
         </a>
       </div>
