@@ -1,0 +1,56 @@
+.promo {
+  margin: 0;
+}
+
+.promo__container {
+  position: relative;
+  margin: 0 0 138px 0;
+  padding-top: 27px;
+  padding-bottom: 164px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.promo__background-cat {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.promo__main-title {
+  margin: 0 0 25px 0;
+  padding: 0;
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo__main-slogan {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo__button-choose-programm {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #68b738;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.promo__product-image {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+}

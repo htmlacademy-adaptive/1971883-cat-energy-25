@@ -1,0 +1,27 @@
+.catalog-option {
+  background-color: #f2f2f2;
+}
+
+.catalog-option__title {
+  font-family: "Oswald Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.catalog-option__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.catalog-option__link {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
