@@ -1,15 +1,28 @@
 .catalog-option {
   background-color: $light-grey;
+  padding-bottom: 18px;
 }
 
 .catalog-option__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 91px;
+  margin-bottom: 29px;
   font-family: "Oswald Regular", sans-serif;
-  text-transform: uppercase;
   font-size: 24px;
-  line-height: 37px;
+  font-weight: 37px;
+  text-transform: uppercase;
 }
 
 .catalog-option__description {
+  padding: 0;
+  padding-bottom: 22px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 33px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #d9d9d9;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -18,10 +31,27 @@
 }
 
 .catalog-option__link {
+  display: block;
+  margin: 0;
+  margin-left: 19px;
+  padding: 0;
   font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
+}
+
+.catalog-option__slim {
+  background-image: url("../../img/cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 21px;
+  margin-bottom: 20px;
+}
+
+.catalog-option__pro {
+  background-image: url("../../img/cat-muscle.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
 }

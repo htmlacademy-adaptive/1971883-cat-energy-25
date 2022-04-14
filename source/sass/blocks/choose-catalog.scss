@@ -1,17 +1,6 @@
 .choose-catalog {
   margin: 0;
   padding: 20px;
-}
-
-.choose-catalog__catalog-option {
-  background-color: $light-grey;
-}
-
-.catalog-option__title {
-  margin: 0;
-  padding: 0;
-  font-family: "Oswald Regular", sans-serif;
-  font-size: 24px;
-  font-weight: 37px;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }

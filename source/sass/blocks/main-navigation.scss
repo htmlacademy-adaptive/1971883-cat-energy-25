@@ -1,3 +1,13 @@
+.main-navigation {
+  display: none;
+}
+
+.main-navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .main-navigation__link {
   font-family: "Oswald Medium", sans-serif;
   font-size: 20px;

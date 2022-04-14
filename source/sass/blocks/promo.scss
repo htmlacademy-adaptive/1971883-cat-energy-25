@@ -10,6 +10,11 @@
   background-color: rgba(104, 183, 56, 0.85);
 }
 
+.promo__text {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .promo__background-cat {
   display: block;
   position: absolute;
@@ -40,10 +45,16 @@
 }
 
 .promo__button-choose-programm {
+  display: block;
+  width: 192px;
+  margin: 0 auto;
+  padding: 7px 44px;
   font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $white;
+  text-align: center;
   background-color: $green;
   text-transform: uppercase;
   text-decoration: none;
