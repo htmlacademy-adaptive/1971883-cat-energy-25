@@ -5,7 +5,7 @@
 }
 
 .living-example__description {
-  color: #444444;
+  color: $grey;
   font-size: 14px;
   line-height: 18px;
 }
@@ -27,13 +27,13 @@
 .living-example__weight-description {
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: $grey;
 }
 
 .living-example__time-description {
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: $grey;
 }
 
 .living-example__food-expenses {

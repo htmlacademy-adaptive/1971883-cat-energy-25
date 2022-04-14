@@ -1,5 +1,5 @@
 .catalog-option {
-  background-color: #f2f2f2;
+  background-color: $light-grey;
 }
 
 .catalog-option__title {
@@ -14,7 +14,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $grey;
 }
 
 .catalog-option__link {
@@ -22,6 +22,6 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
   text-decoration: none;
 }

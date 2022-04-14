@@ -25,7 +25,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
 }
 
 .promo__main-slogan {
@@ -36,15 +36,15 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
 }
 
 .promo__button-choose-programm {
   font-family: "Oswald Regular", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $white;
+  background-color: $green;
   text-transform: uppercase;
   text-decoration: none;
 }

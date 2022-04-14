@@ -3,27 +3,27 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $grey;
   text-transform: uppercase;
 }
 
 .main-form__control-radio-purpose {
-  color: #222222;
+  color: $dark-grey;
 }
 
 .main-form__submit {
   font-family: "Oswald Regular", sans-serif;
   font-weight: normal;
-  background-color: #68b738;
+  background-color: $green;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $white;
   border: none;
 }
 
 .main-form__important-inputs-description {
   font-family: "Arial", sans-serif;
-  color: #000000;
+  color: $black;
   text-transform: none;
 }
