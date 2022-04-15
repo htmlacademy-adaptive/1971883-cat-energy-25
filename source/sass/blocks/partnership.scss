@@ -1,18 +1,36 @@
 .partnership {
-  background-color: #f2f2f2;
+  margin: 0;
+  background-color: $white;
+}
+
+.partnership__container {
+  margin: 0;
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .partnership__title {
+  margin: 0;
+  padding: 0;
+  width: 139px;
   font-family: "Oswald Regular", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $black;
 }
 
 .partnership__adress {
+  margin: 0;
+  padding: 0;
+  width: 139px;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $grey;
+}
+
+.partnership__map {
+  display: block;
 }

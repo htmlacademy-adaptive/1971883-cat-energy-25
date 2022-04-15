@@ -1,0 +1,66 @@
+.impact-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.impact-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.impact-list__item {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+
+.impact-list__text {
+  margin: 0;
+  margin-left: 80px;
+  padding: 0;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  width: 200px;
+  text-align: left;
+}
+
+.impact-list__leaf {
+  background-image: url("../img/impact-item-1.svg");
+}
+
+.impact-list__powder {
+  background-image: url("../img/impact-item-2.svg");
+}
+
+.impact-list__cultery {
+  background-image: url("../img/impact-item-3.svg");
+}
+
+.impact-list__time {
+  background-image: url("../img/impact-item-4.svg");
+}
+
+
+@media (min-width: $tablet-width) {
+  .impact-list {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 280px 280px;
+  }
+
+  .impact-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .impact-list {
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 280px;
+  }
+}

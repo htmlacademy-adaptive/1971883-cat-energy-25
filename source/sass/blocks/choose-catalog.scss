@@ -1,17 +1,15 @@
 .choose-catalog {
   margin: 0;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.choose-catalog__catalog-option {
-  background-color: #d9d9d9;
-}
-
-.catalog-option__title {
-  margin: 0;
-  padding: 0;
-  font-family: "Oswald Regular", sans-serif;
-  font-size: 24px;
-  font-weight: 37px;
-  text-transform: uppercase;
+@media (min-width: $desktop-width) {
+  .choose-catalog {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }

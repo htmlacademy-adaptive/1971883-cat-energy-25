@@ -10,6 +10,11 @@
   background-color: rgba(104, 183, 56, 0.85);
 }
 
+.promo__text {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .promo__background-cat {
   display: block;
   position: absolute;
@@ -25,7 +30,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
 }
 
 .promo__main-slogan {
@@ -36,15 +41,21 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
 }
 
 .promo__button-choose-programm {
+  display: block;
+  width: 192px;
+  margin: 0 auto;
+  padding: 7px 44px;
   font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $white;
+  text-align: center;
+  background-color: $green;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -53,4 +64,22 @@
   position: absolute;
   top: 167px;
   left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__background-cat {
+    display: none;
+  }
+
+  .promo__container {
+    background-color: $white;
+  }
+
+  .promo__main-title {
+    color: $black;
+  }
+
+  .promo__main-slogan {
+    color: $black;
+  }
 }

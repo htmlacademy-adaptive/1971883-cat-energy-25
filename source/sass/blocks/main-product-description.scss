@@ -1,11 +1,32 @@
+.main-product-description {
+  margin: 0;
+  padding: 0 20px 49px 20px;
+}
+
 .main-product-description__title {
   font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
 .main-product-description__impact-list {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-product-description {
+    padding: 45px 30px 47px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-product-description {
+    padding: 71px 110px 26px 110px;
+  }
 }

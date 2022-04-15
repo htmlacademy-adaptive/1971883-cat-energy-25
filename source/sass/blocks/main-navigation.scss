@@ -1,8 +1,28 @@
+.main-navigation {
+  display: none;
+}
+
+.main-navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .main-navigation__link {
   font-family: "Oswald Medium", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    display: block;
+  }
+
+  .main-navigation__list {
+    display: flex;
+  }
 }
