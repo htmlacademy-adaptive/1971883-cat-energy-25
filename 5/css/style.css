@@ -1,0 +1,775 @@
+@font-face {
+  font-family: "Oswald Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+.additional-product__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additional-product__quantity-container {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.button-order {
+  display: block;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #68b738;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-additional-goods__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.catalog-discount {
+  background-image: url("../../img/catalog-discount-background.jpg");
+}
+
+.catalog-discount__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.catalog-option {
+  background-color: #f2f2f2;
+  padding-bottom: 18px;
+}
+
+.catalog-option__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 91px;
+  margin-bottom: 29px;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 37px;
+  text-transform: uppercase;
+}
+
+.catalog-option__description {
+  padding: 0;
+  padding-bottom: 22px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 33px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #d9d9d9;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.catalog-option__link {
+  display: block;
+  margin: 0;
+  margin-left: 19px;
+  padding: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-option__link--slim {
+  width: 160px;
+}
+
+.catalog-option__link--pro {
+  width: 160px;
+}
+
+.catalog-option__link-icon {
+  margin-left: 25px;
+}
+
+.catalog-option__slim {
+  background-image: url("../../img/cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 21px;
+  margin-bottom: 20px;
+}
+
+.catalog-option__pro {
+  background-image: url("../../img/cat-muscle.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
+}
+
+@media (min-width: 1440px) {
+  .catalog-option {
+    width: 570px;
+  }
+}
+.catalog-show-more__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-show-more__description {
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-show-more__button {
+  display: block;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+.choose-catalog {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1440px) {
+  .choose-catalog {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+.client-additionally__title {
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+}
+
+.client-comment__title {
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+}
+
+.contacts-client__title {
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+}
+
+.living-example {
+  margin: 0;
+  padding: 25px 20px 40px 20px;
+  background-color: #eaeaea;
+}
+
+.living-example__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-weight: 400;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.living-example__description {
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.living-example__spend-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 13.5px;
+  padding-bottom: 16.5px;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: solid 1px #cdcdcd;
+  border-radius: 3px;
+  width: 122px;
+  text-align: center;
+}
+
+.living-example__spend-description {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: -12px;
+  width: 88px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+.living-example__spend-description--weight {
+  left: 18px;
+}
+
+.living-example__spend-description--time {
+  right: 18px;
+}
+
+.living-example__food-expenses {
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.living-example__before {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.living-example__after {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.living-example__spending-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.living-example__slider-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 210px;
+}
+
+.living-example__image {
+  display: block;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .living-example__common-spending-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .living-example__spending-container {
+    margin: 0;
+    width: 366px;
+  }
+
+  .living-example__image {
+    margin: 0;
+  }
+}
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.main-footer__container {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.main-footer__word-logo-link {
+  display: block;
+  padding: 0;
+  padding-top: 39px;
+  padding-bottom: 31px;
+  text-align: center;
+}
+
+.main-footer__social {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.main-footer__html-academy-link {
+  display: block;
+  align-self: center;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+  }
+}
+.main-form {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.main-form__control-radio-purpose {
+  color: #222222;
+}
+
+.main-form__submit {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  background-color: #68b738;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+}
+
+.main-form__important-inputs-description {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  text-transform: none;
+}
+
+.main-header__container {
+  width: 280px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 17px;
+}
+
+.main-header__logo-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-header__logo-link {
+  display: block;
+  margin: 0;
+  margin-right: 56px;
+  padding: 0;
+}
+
+.main-header__word-logo-link {
+  display: block;
+  margin: 0;
+  margin-right: 65px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .main-header__container {
+    justify-content: space-between;
+    width: 708px;
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .main-header__container {
+    width: 1220px;
+  }
+}
+.main-navigation {
+  display: none;
+}
+
+.main-navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.main-navigation__link {
+  font-family: "Oswald Medium", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .main-navigation {
+    display: block;
+  }
+
+  .main-navigation__list {
+    display: flex;
+  }
+}
+.page__body {
+  font-family: "Arial", sans-serif;
+  min-height: 100%;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .page__body {
+    width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  .page__body {
+    width: 1440px;
+  }
+}
+.partnership {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.partnership__container {
+  margin: 0;
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.partnership__title {
+  margin: 0;
+  padding: 0;
+  width: 139px;
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.partnership__adress {
+  margin: 0;
+  padding: 0;
+  width: 139px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.partnership__map {
+  display: block;
+}
+
+.product-card__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.main-product-description {
+  margin: 0;
+  padding: 0 20px 49px 20px;
+}
+
+.main-product-description__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.main-product-description__impact-list {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: 768px) {
+  .main-product-description {
+    padding: 45px 30px 47px 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-product-description {
+    padding: 71px 110px 26px 110px;
+  }
+}
+.program-selection__main-title {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+}
+
+.program-selection__description {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.promo {
+  margin: 0;
+}
+
+.promo__container {
+  position: relative;
+  margin: 0 0 138px 0;
+  padding-top: 27px;
+  padding-bottom: 164px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.promo__text {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.promo__background-cat {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.promo__main-title {
+  margin: 0 0 25px 0;
+  padding: 0;
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo__main-slogan {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo__button-choose-programm {
+  display: block;
+  width: 192px;
+  margin: 0 auto;
+  padding: 7px 44px;
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #68b738;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.promo__product-image {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+}
+
+@media (min-width: 768px) {
+  .promo__background-cat {
+    display: none;
+  }
+
+  .promo__container {
+    background-color: #ffffff;
+  }
+
+  .promo__main-title {
+    color: #000000;
+  }
+
+  .promo__main-slogan {
+    color: #000000;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-catalog-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.product-description {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.impact-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.impact-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.impact-list__item {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+
+.impact-list__text {
+  margin: 0;
+  margin-left: 80px;
+  padding: 0;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  width: 200px;
+  text-align: left;
+}
+
+.impact-list__leaf {
+  background-image: url("../../img/impact-item-1.svg");
+}
+
+.impact-list__powder {
+  background-image: url("../../img/impact-item-2.svg");
+}
+
+.impact-list__cultery {
+  background-image: url("../../img/impact-item-3.svg");
+}
+
+.impact-list__time {
+  background-image: url("../../img/impact-item-4.svg");
+}
+
+@media (min-width: 768px) {
+  .impact-list {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 280px 280px;
+  }
+
+  .impact-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .impact-list {
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 280px;
+  }
+}
+.social {
+  padding: 20px;
+}
+
+.social__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 132px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social__item {
+  width: 28px;
+}
+
+.social__link {
+  width: 28px;
+}
+/*# sourceMappingURL=style.css.map */
