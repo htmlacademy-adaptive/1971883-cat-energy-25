@@ -117,14 +117,14 @@
 }
 
 .catalog-option__slim {
-  background-image: url("../../img/cat-slim.svg");
+  background-image: url("../img/cat-slim.svg");
   background-repeat: no-repeat;
   background-position: 22px 21px;
   margin-bottom: 20px;
 }
 
 .catalog-option__pro {
-  background-image: url("../../img/cat-muscle.svg");
+  background-image: url("../img/cat-muscle.svg");
   background-repeat: no-repeat;
   background-position: 13px 24px;
 }
@@ -720,19 +720,19 @@
 }
 
 .impact-list__leaf {
-  background-image: url("../../img/impact-item-1.svg");
+  background-image: url("../img/impact-item-1.svg");
 }
 
 .impact-list__powder {
-  background-image: url("../../img/impact-item-2.svg");
+  background-image: url("../img/impact-item-2.svg");
 }
 
 .impact-list__cultery {
-  background-image: url("../../img/impact-item-3.svg");
+  background-image: url("../img/impact-item-3.svg");
 }
 
 .impact-list__time {
-  background-image: url("../../img/impact-item-4.svg");
+  background-image: url("../img/impact-item-4.svg");
 }
 
 @media (min-width: 768px) {
