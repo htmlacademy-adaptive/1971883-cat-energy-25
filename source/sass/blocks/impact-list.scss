@@ -43,3 +43,25 @@
 .impact-list__time {
   background-image: url("../../img/impact-item-4.svg");
 }
+
+
+@media (min-width: $tablet-width) {
+  .impact-list {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 280px 280px;
+  }
+
+  .impact-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .impact-list {
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 280px;
+  }
+}
+

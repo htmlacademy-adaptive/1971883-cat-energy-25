@@ -18,3 +18,15 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-product-description {
+    padding: 45px 30px 47px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-product-description {
+    padding: 71px 110px 26px 110px;
+  }
+}

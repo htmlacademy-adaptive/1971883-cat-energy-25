@@ -16,3 +16,13 @@
   color: $black;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    display: block;
+  }
+
+  .main-navigation__list {
+    display: flex;
+  }
+}

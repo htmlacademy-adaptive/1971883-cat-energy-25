@@ -104,3 +104,20 @@
   display: block;
   margin-bottom: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .living-example__common-spending-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .living-example__spending-container {
+    margin: 0;
+    width: 366px;
+  }
+
+  .living-example__image {
+    margin: 0;
+  }
+}

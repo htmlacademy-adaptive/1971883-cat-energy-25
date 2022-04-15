@@ -38,3 +38,12 @@
   color: $grey;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+  }
+}

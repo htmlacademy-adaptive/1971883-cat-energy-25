@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Cat energy</title>
     <link href="css/style.css" rel="stylesheet">
@@ -8,16 +9,17 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container">
-        <a class="main-header__logo">
-          <img src="img/header-logotype.svg" width="33" height="37" alt="cat energy.">
-        </a>
-        <a class="main-header__word-logo">
-          <img src="img/word-logotype.svg" width="101" height="18" alt="cat energy.">
-        </a>
+        <div class="main-header__logo-container">
+          <a class="main-header__logo-link">
+            <img class="main-header__logo" src="img/header-logotype.svg" width="33" height="37" alt="cat energy.">
+          </a>
+          <a class="main-header__word-logo-link">
+            <img class="main-header__word-logo" src="img/word-logotype.svg" width="101" height="18" alt="cat energy.">
+          </a>
+        </div>
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-      </div>
         <nav class="main-navigation">
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list">
@@ -33,6 +35,7 @@
             </ul>
           </div>
         </nav>
+      </div>
     </header>
     <main class="main-container">
       <section class="promo">
@@ -64,7 +67,7 @@
           <p class="catalog-option__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="catalog-option__link" href="#">
+          <a class="catalog-option__link catalog-option__link--slim" href="#">
             каталог slim
             <svg class="catalog-option__link-icon" width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path stroke="#000" stroke-width="2" d="M0 6h18"/>
@@ -79,7 +82,7 @@
           <p class="catalog-option__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a class="catalog-option__link" href="#">
+          <a class="catalog-option__link catalog-option__link--pro" href="#">
             каталог pro
             <svg class="catalog-option__link-icon" width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path stroke="#000" stroke-width="2" d="M0 6h18"/>
@@ -128,7 +131,8 @@
         <p class="living-example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="living-example__spending-container">
+        <div class="living-example__common-spending-container">
+          <div class="living-example__spending-container">
             <span class="living-example__spend-title">
               5 КГ
             </span>
@@ -147,6 +151,7 @@
         <p class="living-example__food-expenses">
           Затраты на питание: 15 000 РУБ.
         </p>
+        </div>
         <img class="living-example__image" src="img/cat-before.png" with="280" height="232" alt="Толстенький кот до диеты.">
         <div class="living-example__slider-container">
           <span class="living-example__before">

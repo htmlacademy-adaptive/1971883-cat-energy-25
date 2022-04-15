@@ -65,3 +65,21 @@
   top: 167px;
   left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo__background-cat {
+    display: none;
+  }
+
+  .promo__container {
+    background-color: $white;
+  }
+
+  .promo__main-title {
+    color: $black;
+  }
+
+  .promo__main-slogan {
+    color: $black;
+  }
+}

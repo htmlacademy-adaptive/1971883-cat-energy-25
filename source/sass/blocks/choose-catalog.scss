@@ -4,3 +4,12 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: $desktop-width) {
+  .choose-catalog {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
