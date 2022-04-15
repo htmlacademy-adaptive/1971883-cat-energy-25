@@ -1,0 +1,35 @@
+.catalog-product {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.catalog-product__title {
+  margin: 0;
+  padding: 0 20px;
+  width: 280px;
+  padding-top: 27px;
+  padding-bottom: 40px;
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog-product__title-container {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.catalog-product__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-product__product-card-container {
+  margin: 0;
+  padding: 19px 20px 24px 20px;
+  border-bottom: 1px solid #ebebeb;
+}
