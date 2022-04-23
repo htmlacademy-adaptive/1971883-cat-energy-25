@@ -33,3 +33,19 @@
   padding: 19px 20px 24px 20px;
   border-bottom: 1px solid #ebebeb;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-product__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 511px 511px 511px 511px;
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-product__list {
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: 511px 511px;
+  }
+}
