@@ -49,48 +49,42 @@
       </div>
       <form class="program-selection__main-form main-form" action="https://echo.htmlacademy.ru/" method="get" >
         <fieldset class="main-form__text-fields">
-          <div class="main-form__text-field-container">
-            <label class="main-form__label-name-field">
-              <span class="main-form__legend-cat-name">
+            <label class="main-form__text-field-container">
+              <p class="main-form__legend">
                 Имя:*
-              </span>
-              <input class="main-form__cat-name-field" type="text" id="cat-name" value="барсик" required>
+              </p>
+              <input class="main-form__text-field" type="text" id="cat-name" value="барсик" required>
             </label>
-          </div>
-          <div class="main-form__text-field-container">
-            <label class="main-form__label-weight-field">
-              <span class="main-form__legend-cat-weight">
+            <label class="main-form__text-field-container">
+              <p class="main-form__legend">
                 Вес (кг):*
-              </span>
-              <input class="main-form__cat-weight-field" type="number" id="cat-weight" value="7" required>
+              </p>
+              <input class="main-form__text-field" type="number" id="cat-weight" value="7" required>
             </label>
-          </div>
-          <div class="main-form__text-field-container">
-            <label class="main-form__label-age-field">
-              <span class="main-form__legend-cat-age">
+            <label class="main-form__text-field-container">
+              <p class="main-form__legend">
                 Возраст (лет):
-              </span>
-              <input class="main-form__cat-age-field" type="number" id="cat-age" value="7" required>
+              </p>
+              <input class="main-form__text-field" type="number" id="cat-age" value="7" required>
             </label>
-          </div>
         </fieldset>
         <fieldset class="main-form__control-radio-purpose">
           <ul class="main-form__control-radio-list">
             <li class="main-form__control-radio-item">
-              <label class="main-form__label-weight-loss">
-                <input class="main-form__weght-loss-control" type="radio" name="type-of-purpose" value="weight-loss" checked>
+              <label class="main-form__label-radio-item">
+                <input class="main-form__radio-control" type="radio" name="type-of-purpose" value="weight-loss" checked>
                 <span class="main-form__control-label">похудение</span>
               </label>
             </li>
             <li class="main-form__control-radio-item">
-              <label class="main-form__label-weight-gain">
-                <input class="main-form__weght-gain-control" type="radio" name="type-of-purpose" value="weight-gain" >
+              <label class="main-form__label-radio-item">
+                <input class="main-form__radio-control" type="radio" name="type-of-purpose" value="weight-gain" >
                 <span class="main-form__control-label">Набор массы</span>
               </label>
             </li>
             <li class="main-form__control-radio-item">
-              <label class="main-form__label-dont-know">
-                <input class="main-form__dont-know-control" type="radio" name="type-of-purpose" value="dont-know">
+              <label class="main-form__label-radio-item">
+                <input class="main-form__radio-control" type="radio" name="type-of-purpose" value="dont-know">
                 <span class="main-form__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
@@ -101,37 +95,33 @@
             Контактные данные
             (владельца кота)
           </legend>
-          <div class="main-form__text-field-container">
-            <label class="main-form__label-client-email">
-              <span class="main-form__legend-client-email">
+            <label class="main-form__text-field-container">
+              <p class="main-form__legend">
                 E-mail:*
-              </span>
-              <input class="main-form__client-email-field" type="email" name="client-email" value="kuklachev@gmail.com" required>
+              </p>
+              <input class="main-form__text-field main-form__text-field--email" type="email" name="client-email" value="kuklachev@gmail.com" required>
             </label>
-          </div>
-          <div class="main-form__text-field-container">
-            <label class="main-form__label-client-phone">
-              <span class="main-form__legend-client-phone">
+            <label class="main-form__text-field-container">
+              <p class="main-form__legend">
                 Телефон:*
-              </span>
-              <input class="main-form__client-phone-field" type="tel" name="client-phone" value="8 (960) 900-60-90" required>
+              </p>
+              <input class="main-form__text-field main-form__text-field--phone" type="tel" name="client-phone" value="8 (960) 900-60-90" required>
             </label>
-          </div>
         </fieldset>
         <fieldset class="main-form__client-comment">
           <legend class="main-form__client-comment-title">
             Комментарий
           </legend>
-            <textarea name="client-comment" id="client-comment" cols="30" rows="10">Расскажите обо всех повaдках кота
+            <textarea class="main-form__client-comment-field" name="client-comment" id="client-comment" cols="30" rows="10">Расскажите обо всех повaдках кота
             </textarea>
         </fieldset>
         <fieldset class="main-form__additionally">
-          <legend class="main-form__client-additionally-title">
+          <legend class="main-form__additionally-title">
             Дополнительно
           </legend>
           <ul class="main-form__control-composition-list">
             <li class="main-form__control-composition-item">
-              <label class="main-form__label-sweetener">
+              <label class="main-form__control-composition-container">
                 <input class="main-form__sweetener-control" name="sweetener" id="sweetener" type="checkbox" checked>
                 <span class="main-form__control-label">
                   сахарозаменитель
@@ -139,7 +129,7 @@
               </label>
             </li>
             <li class="main-form__control-composition-item">
-              <label class="main-form__label-drinking-water">
+              <label class="main-form__control-composition-container">
                 <input class="main-form__drinking-water-control" name="drinking-water" id="drinking-water" type="checkbox">
                 <span class="main-form__control-label">
                   питьевая вода
@@ -147,7 +137,7 @@
               </label>
             </li>
             <li class="main-form__control-composition-item">
-              <label class="main-form__label-milk">
+              <label class="main-form__control-composition-container">
                 <input class="main-form__milk-control" name="milk" id="milk" type="checkbox">
                 <span class="main-form__control-label">
                   молоко
@@ -155,7 +145,7 @@
               </label>
             </li>
             <li class="main-form__control-composition-item">
-              <label class="label-vitamins">
+              <label class="main-form__control-composition-container">
                 <input class="main-form__vitamins-control" name="vitamins" id="vitamins" type="checkbox">
                 <span class="main-form__control-label">
                   витамины
@@ -170,16 +160,20 @@
         </p>
       </form>
     </section>
-    <section class="partnership">
-      <h2 class="partnership__title">
-        приглашаем к сотрудничеству дилеров!
-      </h2>
-      <p class="partnership__adress">
-        ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург
-      </p>
-      <img src="img/partnership-location.jpg" width="320" height="362" alt="Наше местонахождение.">
+    <section class="partnership partnership--form">
+      <div class="partnership__container">
+        <h2 class="partnership__title">
+          приглашаем
+          к сотрудничеству
+          дилеров!
+        </h2>
+        <p class="partnership__adress">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </p>
+      </div>
+      <img class="partnership__map" src="img/partnership-location.jpg" width="320" height="362" alt="Наше местонахождение.">
     </section>
     <footer class="main-footer">
       <div class="main-footer__container">
