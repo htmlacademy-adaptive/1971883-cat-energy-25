@@ -1,9 +1,18 @@
 .catalog-discount {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 35px;
   background-image: url("../../img/catalog-discount-background.jpg");
+  background-size: cover;
+  padding-top: 187px;
+  padding-bottom: 43px;
 }
 
 .catalog-discount__description {
+  margin: 0 auto;
+  width: 161px;
   font-size: 16px;
   line-height: 20px;
   color: $white;
+  text-align: center;
 }
