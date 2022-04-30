@@ -1,5 +1,25 @@
 .main-navigation {
-  display: none;
+  &--opened {
+    position: absolute;
+    top: 65px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background-color: $white;
+    text-align: center;
+    border-top: solid 1px #e6e6e6;
+  }
+
+  &--closed {
+    display: none;
+  }
+}
+
+.main-navigation__item {
+  padding-top: 22px;
+  padding-bottom: 23px;
+  border-bottom: solid 1px #e6e6e6;
 }
 
 .main-navigation__list {
@@ -12,6 +32,7 @@
   font-family: "Oswald Medium", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 500;
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
