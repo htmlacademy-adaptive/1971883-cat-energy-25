@@ -1,7 +1,28 @@
 .living-example {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 25px 20px 40px 20px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    padding-top: 43px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 305px;
+    background-image: url("../img/background-living-example.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 26px 110px 65px 110px;
+    background-size: 1440px 462px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .living-example__title {
@@ -12,6 +33,17 @@
   font-family: "Oswald Regular", sans-serif;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
+    margin-bottom: 146px;
+  }
 }
 
 .living-example__description {
@@ -21,6 +53,17 @@
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-bottom: 69px;
+  }
 }
 
 .living-example__spend-title {
@@ -36,6 +79,12 @@
   border-radius: 3px;
   width: 122px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    width: 160px;
+  }
 }
 
 .living-example__spend-description {
@@ -49,14 +98,37 @@
   color: $grey;
   background-color: #eaeaea;
   text-align: center;
+  white-space: pre;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    background-color: $white;
+    bottom: -7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+  }
 }
 
 .living-example__spend-description--weight {
   left: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 111px;
+    left: 25px;
+  }
 }
 
 .living-example__spend-description--time {
   right: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    right: 10px;
+  }
 }
 
 .living-example__food-expenses {
@@ -67,6 +139,21 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 29px;
+    width: 174px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+  }
 }
 
 .living-example__before {
@@ -84,12 +171,15 @@
 }
 
 .living-example__spending-container {
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
   position: relative;
   margin-bottom: 32px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .living-example__slider-container {
@@ -113,11 +203,17 @@
   }
 
   .living-example__spending-container {
-    margin: 0;
     width: 366px;
   }
 
   .living-example__image {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .living-example__common-spending-container {
+    flex-direction: column;
+    margin-bottom: 0;
   }
 }

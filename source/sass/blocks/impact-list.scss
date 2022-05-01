@@ -5,17 +5,49 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
 
-.impact-list__item:not(:last-child) {
-  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 247px 249px;
+    grid-template-rows: 280px 280px;
+    row-gap: 37px;
+    column-gap: 137px;
+    width: 633px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1220px;
+    gap: 0;
+    justify-content: flex-start;
+  }
 }
 
 .impact-list__item {
-  margin: 0;
+  position: relative;
   padding: 0;
   background-repeat: no-repeat;
   background-position: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 151px;
+    background-size: 80px;
+    background-position: 0 40px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
+  }
 }
 
 .impact-list__text {
@@ -26,42 +58,86 @@
   padding-bottom: 4px;
   width: 200px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    width: 245px;
+  }
 }
 
 .impact-list__leaf {
   background-image: url("../img/impact-item-1.svg");
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: url("../img/number-1.svg");
+      position: absolute;
+      left: 118px;
+      top: 40px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    margin-right: 94px;
+  }
 }
 
 .impact-list__powder {
   background-image: url("../img/impact-item-2.svg");
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: url("../img/number-2.svg");
+      position: absolute;
+      left: 118px;
+      top: 40px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+    width: 246px;
+  }
 }
 
 .impact-list__cultery {
   background-image: url("../img/impact-item-3.svg");
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: url("../img/number-3.svg");
+      position: absolute;
+      left: 118px;
+      top: 40px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 248px;
+    margin-right: 70px;
+  }
 }
 
 .impact-list__time {
   background-image: url("../img/impact-item-4.svg");
-}
 
-
-@media (min-width: $tablet-width) {
-  .impact-list {
-    display: grid;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 280px 280px;
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: url("../img/number-4.svg");
+      position: absolute;
+      left: 118px;
+      top: 40px;
+      z-index: -1;
+    }
   }
 
-  .impact-list__item:not(:last-child) {
-    margin-bottom: 0;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  .impact-list {
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: 280px;
+  @media (min-width: $desktop-width) {
+    width: 250px;
   }
 }
 
