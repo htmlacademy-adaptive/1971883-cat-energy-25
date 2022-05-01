@@ -20,11 +20,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    & {
-      width: 440px;
-      display: block;
-      position: initial;
-    }
+    width: 440px;
+    display: block;
+    position: initial;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 483px;
   }
 }
 

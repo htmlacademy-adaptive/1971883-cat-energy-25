@@ -2,6 +2,11 @@
   padding-top: 13px;
   padding-bottom: 18px;
   border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    border-color: #cdcdcd;
+    padding: 26px 38px 27px 38px;
+  }
 }
 
 .additional-product__title {
@@ -14,6 +19,11 @@
   line-height: 16px;
   color: $dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-product__quantity-container {
@@ -25,4 +35,26 @@
   font-size: 14px;
   line-height: 14px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 300px;
+    justify-content: end;
+  }
+}
+
+.additional-product__description-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.additional-product__price {
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    text-align: right;
+  }
 }
