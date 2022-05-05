@@ -1,28 +1,108 @@
 .main-navigation {
-  display: none;
+  &--opened {
+    position: absolute;
+    top: 65px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background-color: $white;
+    text-align: center;
+    border-top: solid 1px #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    display: block;
+    position: initial;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 483px;
+  }
+}
+
+.main-navigation__item {
+  padding-top: 22px;
+  padding-bottom: 23px;
+  border-bottom: solid 1px #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    & {
+      position: relative;
+      padding: 0;
+      padding-bottom: 12px;
+      border: none;
+    }
+
+    &--current::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      background-color: $green;
+      height: 2px;
+
+      @media (min-width: $desktop-width) {
+        & {
+          bottom: 2px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & {
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .main-navigation__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    & {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 }
 
 .main-navigation__link {
   font-family: "Oswald Medium", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 500;
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
-}
 
-@media (min-width: $tablet-width) {
-  .main-navigation {
-    display: block;
+  @media (min-width: $tablet-width) {
+    & {
+      font-family: "Oswald Regular", sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+    }
   }
 
-  .main-navigation__list {
-    display: flex;
+  @media (min-width: $desktop-width) {
+    & {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

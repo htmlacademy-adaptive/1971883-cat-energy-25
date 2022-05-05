@@ -3,13 +3,19 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $desktop-width) {
-  .choose-catalog {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 110px;
-    padding-right: 110px;
+  @media (min-width: $tablet-width) {
+    & {
+      padding: 0 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 110px;
+      padding-right: 110px;
+    }
   }
 }

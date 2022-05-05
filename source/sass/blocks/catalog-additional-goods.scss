@@ -1,4 +1,5 @@
 .catalog-additional-goods__title {
+  position: relative;
   margin: 0 20px;
   padding: 25px 0 35px 0;
   font-family: "Oswald Regular", sans-serif;
@@ -6,6 +7,43 @@
   font-size: 24px;
   line-height: 24px;
   border-bottom: 1px solid #ebebeb;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 2px;
+    background-color: $green;
+    right: -20px;
+    top: 41px;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+      right: 0;
+      width: 328px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    padding-left: 67px;
+    border: none;
+    margin-top: 68px;
+    margin-bottom: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $green;
+      width: 30px;
+      height: 2px;
+      left: 0;
+      top: 22px;
+    }
+  }
 }
 
 .catalog-additional-goods__list {
@@ -13,5 +51,11 @@
   margin: 0;
   padding: 0 20px 0 20px;
   margin-bottom: 35px;
-}
 
+  @media (min-width: $tablet-width) {
+    border: solid 1px #cdcdcd;
+    width: 706px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}

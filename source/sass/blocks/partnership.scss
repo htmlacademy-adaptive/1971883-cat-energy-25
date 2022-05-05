@@ -1,6 +1,10 @@
 .partnership {
   margin: 0;
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .partnership__container {
@@ -8,6 +12,13 @@
   padding: 26px 20px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    background-color: $white;
+    padding: 56px 80px;
+    position: absolute;
+  }
 }
 
 .partnership__title {
@@ -20,6 +31,11 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .partnership__adress {
@@ -29,6 +45,16 @@
   font-size: 14px;
   line-height: 20px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .partnership__map {
@@ -41,4 +67,9 @@
 
 .partnership--form {
   background-color: $light-grey;
+}
+
+.partnership iframe {
+  border: none;
+  display: block;
 }

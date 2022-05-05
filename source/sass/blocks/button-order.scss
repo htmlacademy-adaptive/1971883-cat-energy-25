@@ -11,4 +11,13 @@
   text-decoration: none;
   background-color: $green;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
