@@ -1886,11 +1886,6 @@
     z-index: -1;
   }
 }
-@media (min-width: 1440px) {
-  .impact-list__time {
-    width: 250px;
-  }
-}
 
 .social {
   padding: 20px;
