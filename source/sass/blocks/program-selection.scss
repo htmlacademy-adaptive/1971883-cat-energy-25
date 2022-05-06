@@ -7,6 +7,12 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .program-selection__main-title {
@@ -25,6 +31,12 @@
     margin-top: 65px;
     margin-bottom: 54px;
     padding-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 73.5px;
+    margin-bottom: 56px;
+    padding: 0;
   }
 }
 
@@ -45,4 +57,12 @@
     padding-left: 40px;
     margin-bottom: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.program-selection__form-description {
+  margin-bottom: 66px;
 }
