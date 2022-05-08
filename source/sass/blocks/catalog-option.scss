@@ -86,7 +86,7 @@
   color: $black;
   text-decoration: none;
   background-image: url("../img/link-arrow.svg");
-  background-position: 102px 7px;
+  background-position: 102px 6px;
   background-repeat: no-repeat;
 
   &:hover {
@@ -97,6 +97,10 @@
 
   &:active {
     opacity: 0.25;
+  }
+
+  &--pro {
+    background-position: 100px 6px;
   }
 
   @media (min-width: $tablet-width) {

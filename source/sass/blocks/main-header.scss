@@ -39,7 +39,7 @@
 .main-header__logo-link {
   display: block;
   margin: 0;
-  margin-right: 56px;
+  margin-right: 54px;
   padding: 0;
   height: 37px;
 
@@ -55,6 +55,8 @@
   margin: 0;
   margin-right: 65px;
   padding: 0;
+  padding-top: 6px;
+  padding-left: 1px;
   max-height: 18px;
 
   @media (min-width: $tablet-width) {
@@ -77,11 +79,12 @@
   background-repeat: no-repeat;
   border: none;
   background-color: $white;
-  width: 24px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
 
   &--closed {
     background-image: url("../img/burger-button.svg");
+    background-position: center 6px;
   }
 
   &--opened {
@@ -106,8 +109,6 @@
     }
 
     position: relative;
-    width: 25px;
-    height: 25px;
   }
 
   @media (min-width: $tablet-width) {
