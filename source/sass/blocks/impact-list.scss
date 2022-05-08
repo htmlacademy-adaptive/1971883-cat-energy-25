@@ -64,16 +64,22 @@
     padding: 0;
     width: 245px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .impact-list__leaf {
   background-image: url("../img/impact-item-1.svg");
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/impact-item-1-tablet.svg");
+
     &::after {
       content: url("../img/number-1.svg");
       position: absolute;
-      left: 118px;
+      left: 126px;
       top: 40px;
       z-index: -1;
     }
@@ -89,11 +95,13 @@
   background-image: url("../img/impact-item-2.svg");
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/impact-item-2-tablet.svg");
+
     &::after {
       content: url("../img/number-2.svg");
       position: absolute;
-      left: 118px;
-      top: 40px;
+      left: 122px;
+      top: 38px;
       z-index: -1;
     }
   }
@@ -108,18 +116,20 @@
   background-image: url("../img/impact-item-3.svg");
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/impact-item-3-tablet.svg");
+
     &::after {
       content: url("../img/number-3.svg");
       position: absolute;
-      left: 118px;
-      top: 40px;
+      left: 124px;
+      top: 38px;
       z-index: -1;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 248px;
-    margin-right: 70px;
+    margin-right: 78px;
   }
 }
 
@@ -127,10 +137,12 @@
   background-image: url("../img/impact-item-4.svg");
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/impact-item-4-tablet.svg");
+
     &::after {
       content: url("../img/number-4.svg");
       position: absolute;
-      left: 118px;
+      left: 124px;
       top: 40px;
       z-index: -1;
     }

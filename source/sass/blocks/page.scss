@@ -16,5 +16,18 @@
 @media (min-width: $desktop-width) {
   .page__body {
     width: $desktop-width;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 720px;
+      height: 694px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(104, 183, 56, 0.85);
+      z-index: 0;
+    }
   }
 }

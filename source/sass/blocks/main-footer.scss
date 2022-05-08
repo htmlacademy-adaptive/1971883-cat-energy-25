@@ -10,10 +10,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
     width: 708px;
-    padding: 63px 30px 60px 30px;
+    padding: 56px 30px 60px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,7 +30,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 5px 0 5px 0;
+    padding: 5px 0;
     margin-right: 155px;
   }
 
@@ -72,9 +72,14 @@
   line-height: 18px;
   color: $grey;
   text-decoration: none;
+  text-overflow: ellipsis;
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
   }
 }
 
@@ -97,5 +102,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 0;
   }
 }

@@ -11,14 +11,14 @@
     padding-top: 43px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 305px;
+    padding-bottom: 49px;
     background-image: url("../img/background-living-example.png");
     background-position: bottom;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 26px 110px 65px 110px;
+    padding: 0 110px 58px 110px;
     background-size: 1440px 462px;
     flex-direction: row;
     justify-content: space-between;
@@ -57,7 +57,8 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
+    width: 700px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +71,7 @@
   margin: 0;
   padding: 0;
   padding-top: 13.5px;
-  padding-bottom: 16.5px;
+  padding-bottom: 19px;
   font-family: "Oswald Regular", sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -146,6 +147,8 @@
     line-height: 29px;
     width: 174px;
     text-align: end;
+    padding-top: 7px;
+    padding-right: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -156,18 +159,22 @@
   }
 }
 
-.living-example__before {
+.living-example__slider-description {
+  position: relative;
   font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-}
 
-.living-example__after {
-  font-family: "Oswald Regular", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    background-image: url("../img/underline.svg");
+    background-repeat: no-repeat;
+    background-position: center 34px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+  }
 }
 
 .living-example__spending-container {
@@ -177,13 +184,18 @@
   position: relative;
   margin-bottom: 33px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 62px;
+    margin-bottom: 52px;
   }
 }
 
 .living-example__slider-wrapper {
   padding-bottom: 5px;
+  width: 591px;
 }
 
 .living-example__slider-container {
@@ -193,11 +205,30 @@
   margin: 0 auto;
   padding: 0;
   width: 200px;
+
+  @media (min-width: $tablet-width) {
+    width: 570px;
+    margin-left: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 14px;
+  }
 }
 
 .living-example__image {
   display: block;
+  margin: 0 auto;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .living-example__slider {
@@ -207,6 +238,13 @@
   background-color: $white;
   border-radius: 6px;
   border: solid #cdcdcd 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 426px;
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+  }
 }
 
 .living-example__slider-meaning {
@@ -217,21 +255,49 @@
   height: 6px;
   background-color: $green;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider-button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    background-color: $white;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    bottom: -14.5px;
+    left: 197px;
+
+    &::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      position: absolute;
+      border-radius: 50%;
+      top: 12px;
+      left: 12px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .living-example__common-spending-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
   }
 
   .living-example__spending-container {
     width: 366px;
-  }
-
-  .living-example__image {
-    margin: 0;
   }
 }
 
@@ -239,5 +305,11 @@
   .living-example__common-spending-container {
     flex-direction: column;
     margin-bottom: 0;
+  }
+}
+
+.living-example__expenses-text {
+  @media (min-width: $desktop-width) {
+    margin-left: 2px;
   }
 }

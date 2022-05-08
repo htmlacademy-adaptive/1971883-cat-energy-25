@@ -11,7 +11,11 @@
       <div class="main-header__container main-header__container--index">
         <div class="main-header__logo-container">
           <a class="main-header__logo-link">
-            <img class="main-header__logo" src="img/header-logotype.svg" width="34" height="38" alt="cat energy.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/header-logotype-desktop.svg" width="202" height="59">
+              <source media="(min-width: 768px)" srcset="img/header-logotype-tablet.svg" width="174" height="52">
+              <img class="main-header__logo" src="img/header-logotype.svg" width="34" height="38" alt="cat energy.">
+            </picture>
           </a>
           <a class="main-header__word-logo-link">
             <img class="main-header__word-logo" src="img/word-logotype.svg" width="101" height="18" alt="cat energy.">
@@ -38,7 +42,10 @@
     <main class="main-container">
       <section class="promo">
         <div class="promo__container">
-          <img class="promo__background-cat" width="320" height="302" src="img/promo-background-cat.jpg" alt="Кот облизывается.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/promo-background-cat-desktop.jpg 1x, img/promo-background-cat-desktop@2x.jpg 2x" width="720" height="694">
+            <img class="promo__background-cat" width="320" height="302" src="img/promo-background-cat.jpg" srcset="img/promo-background-cat@2x.jpg 2x" alt="Кот облизывается.">
+          </picture>
           <div class="promo__text">
             <h1 class="promo__main-title">
               Функциональное
@@ -152,16 +159,19 @@
           </div>
         </div>
         <div class="living-example__slider-wrapper">
-          <img class="living-example__image" src="img/cat-before.png" with="280" height="232" alt="Толстенький кот до диеты.">
+          <picture>
+            <source media="(min-width: 768px)" width="592" height="511" srcset="img/image-cat-tablet.png 1x, img/image-cat-tablet@2x.png 2x">
+            <img class="living-example__image" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" with="280" height="232" alt="Толстенький кот до диеты.">
+          </picture>
           <div class="living-example__slider-container">
-            <span class="living-example__before">
+            <span class="living-example__slider-description">
               было
             </span>
             <div class="living-example__slider">
-              <div class="living-example__slider-meaning">
-              </div>
+              <div class="living-example__slider-meaning"></div>
+              <button class="slider-button"></button>
             </div>
-            <span class="living-example__after">
+            <span class="living-example__slider-description">
               стало
             </span>
           </div>
@@ -175,19 +185,21 @@
             дилеров!
           </h2>
           <p class="partnership__adress">
-            ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург
+            <span class="partnership__street">ул. Большая
+            Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
           </p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d839.559353726723!2d30.31691148970563!3d59.96831067782996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1651346190195!5m2!1sru!2sru"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          width="320"
-          height="362"
-          allowfullscreen
-          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
-        </iframe>
+        <div class="partnership__map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d839.559353726723!2d30.31691148970563!3d59.96831067782996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1651346190195!5m2!1sru!2sru"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            width="100%"
+            height="100%"
+            allowfullscreen
+            title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+          </iframe>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
