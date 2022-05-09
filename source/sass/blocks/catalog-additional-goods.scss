@@ -15,7 +15,7 @@
     height: 2px;
     background-color: $green;
     right: -20px;
-    top: 41px;
+    top: 40px;
 
     @media (min-width: $tablet-width) {
       top: 22px;
@@ -92,5 +92,15 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: flex-start;
+  }
+}
+
+.catalog-additional-goods__catalog-discount {
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 69px;
+    margin-bottom: 76px;
   }
 }

@@ -59,6 +59,16 @@
   }
 }
 
+.main-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .main-header__word-logo-link {
   display: block;
   margin: 0;

@@ -1,20 +1,10 @@
-.catalog-additional-goods__catalog-discount {
-  margin: 0 auto;
-  margin-bottom: 35px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 69px;
-    margin-bottom: 76px;
-  }
-}
-
 .catalog-discount {
   position: relative;
   width: 280px;
   background-image: url("../../img/catalog-discount-background.jpg");
   background-size: cover;
-  padding-top: 187px;
-  padding-bottom: 43px;
+  padding-top: 186px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     width: max-content;
@@ -50,7 +40,8 @@
 }
 
 .catalog-discount__description {
-  margin: 0 auto;
+  margin-left: 58px;
+  margin-top: 0;
   width: 161px;
   font-size: 16px;
   line-height: 20px;
