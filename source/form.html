@@ -62,7 +62,7 @@
               <input class="main-form__text-field" type="number" id="cat-weight" value="7" required>
             </label>
             <label class="main-form__text-field-container">
-              <p class="main-form__legend">
+              <p class="main-form__legend main-form__legend--age">
                 Возраст (лет):
               </p>
               <input class="main-form__text-field" type="number" id="cat-age" value="7" required>
@@ -72,19 +72,22 @@
           <ul class="main-form__control-radio-list">
             <li class="main-form__control-radio-item">
               <label class="main-form__label-radio-item">
-                <input class="main-form__radio-control" type="radio" name="type-of-purpose" value="weight-loss" checked>
+                <input class="main-form__radio-control visually-hidden" type="radio" name="type-of-purpose" value="weight-loss" checked>
+                <span class="main-form__control-mark"></span>
                 <span class="main-form__control-label">похудение</span>
               </label>
             </li>
             <li class="main-form__control-radio-item">
               <label class="main-form__label-radio-item">
-                <input class="main-form__radio-control" type="radio" name="type-of-purpose" value="weight-gain" >
+                <input class="main-form__radio-control visually-hidden" type="radio" name="type-of-purpose" value="weight-gain">
+                <span class="main-form__control-mark"></span>
                 <span class="main-form__control-label">Набор массы</span>
               </label>
             </li>
             <li class="main-form__control-radio-item">
               <label class="main-form__label-radio-item">
-                <input class="main-form__radio-control" type="radio" name="type-of-purpose" value="dont-know">
+                <input class="main-form__radio-control visually-hidden" type="radio" name="type-of-purpose" value="dont-know">
+                <span class="main-form__control-mark"></span>
                 <span class="main-form__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
@@ -96,13 +99,13 @@
             (владельца кота)
           </legend>
             <label class="main-form__text-field-container">
-              <p class="main-form__legend">
+              <p class="main-form__legend main-form__legend--email">
                 E-mail:*
               </p>
               <input class="main-form__text-field main-form__text-field--email" type="email" name="client-email" value="kuklachev@gmail.com" required>
             </label>
             <label class="main-form__text-field-container">
-              <p class="main-form__legend">
+              <p class="main-form__legend main-form__legend--phone">
                 Телефон:*
               </p>
               <input class="main-form__text-field main-form__text-field--phone" type="tel" name="client-phone" value="8 (960) 900-60-90" required>
@@ -122,7 +125,8 @@
           <ul class="main-form__control-composition-list">
             <li class="main-form__control-composition-item">
               <label class="main-form__control-composition-container">
-                <input class="main-form__sweetener-control" name="sweetener" id="sweetener" type="checkbox" checked>
+                <input class="main-form__control-check visually-hidden" name="sweetener" id="sweetener" type="checkbox" checked>
+                <span class="main-form__check-mark"></span>
                 <span class="main-form__control-label">
                   сахарозаменитель
                 </span>
@@ -130,7 +134,8 @@
             </li>
             <li class="main-form__control-composition-item">
               <label class="main-form__control-composition-container">
-                <input class="main-form__drinking-water-control" name="drinking-water" id="drinking-water" type="checkbox">
+                <input class="main-form__control-check visually-hidden" name="drinking-water" id="drinking-water" type="checkbox">
+                <span class="main-form__check-mark"></span>
                 <span class="main-form__control-label">
                   питьевая вода
                 </span>
@@ -138,7 +143,8 @@
             </li>
             <li class="main-form__control-composition-item">
               <label class="main-form__control-composition-container">
-                <input class="main-form__milk-control" name="milk" id="milk" type="checkbox">
+                <input class="main-form__control-check visually-hidden" name="milk" id="milk" type="checkbox">
+                <span class="main-form__check-mark"></span>
                 <span class="main-form__control-label">
                   молоко
                 </span>
@@ -146,7 +152,8 @@
             </li>
             <li class="main-form__control-composition-item">
               <label class="main-form__control-composition-container">
-                <input class="main-form__vitamins-control" name="vitamins" id="vitamins" type="checkbox">
+                <input class="main-form__control-check visually-hidden" name="vitamins" id="vitamins" type="checkbox">
+                <span class="main-form__check-mark"></span>
                 <span class="main-form__control-label">
                   витамины
                 </span>
@@ -154,10 +161,12 @@
             </li>
           </ul>
         </fieldset>
-        <input class="main-form__submit" id="submit" type="submit" value="отправить заявку">
-        <p class="main-form__important-inputs-description">
-          * — Обязательные поля
-        </p>
+        <div class="main-form__submit-container">
+          <input class="main-form__submit" id="submit" type="submit" value="отправить заявку">
+          <p class="main-form__important-inputs-description">
+            * — Обязательные поля
+          </p>
+        </div>
       </form>
     </section>
     <section class="partnership partnership--form">

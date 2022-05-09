@@ -4,6 +4,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    width: 1440px;
   }
 }
 
@@ -13,11 +14,18 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    padding: 56px 70px;
+    padding-bottom: 63px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 565px;
+    width: 405px;
     background-color: $white;
     padding: 56px 80px;
     position: absolute;
+    top: 95px;
+    left: 110px;
   }
 }
 
@@ -33,8 +41,10 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    padding-top: 4px;
     font-size: 20px;
     line-height: 26px;
+    width: 165px;
   }
 }
 
@@ -50,10 +60,15 @@
     font-size: 16px;
     line-height: 20px;
     text-align: end;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     text-align: start;
+    width: 155px;
   }
 }
 
@@ -72,4 +87,27 @@
 .partnership iframe {
   border: none;
   display: block;
+}
+
+.partnership__map-container {
+  width: 320px;
+  height: 362px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 400px;
+  }
+}
+
+.partnership__street {
+  @media (min-width: $desktop-width) {
+    align-self: flex-end;
+    padding-top: 2px;
+  }
 }
