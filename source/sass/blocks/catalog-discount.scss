@@ -1,7 +1,7 @@
 .catalog-discount {
   position: relative;
   width: 280px;
-  background-image: url("../../img/catalog-discount-background.jpg");
+  background-image: url("../img/catalog-discount-background.jpg");
   background-size: cover;
   padding-top: 186px;
   padding-bottom: 27px;
@@ -9,12 +9,34 @@
   @media (min-width: $tablet-width) {
     width: max-content;
     padding: 71px 124px 69px 422px;
+    background-image: url("../img/catalog-discount-background-tablet.jpg");
+    background-size: 708px 200px;
+    z-index: -2;
+
+    &::before {
+      content: "";
+      width: 708px;
+      height: 200px;
+      background-color: rgba(104, 183, 56, 0.85);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 185px 43px 42px 41px;
     margin: 0;
     align-self: center;
+
+    background-image: url("../img/catalog-discount-background-desktop.png");
+    background-size: 245px 290px;
+
+    &::before {
+      width: 245px;
+      height: 290px;
+    }
   }
 
   &::after {
@@ -27,14 +49,14 @@
 
     @media (min-width: $tablet-width) {
       width: 80px;
-      height: 82px;
+      height: 82.5px;
       top: 57px;
-      left: 77px;
+      left: 79px;
     }
 
     @media (min-width: $desktop-width) {
       top: 56px;
-      left: 84px;
+      left: 85px;
     }
   }
 }

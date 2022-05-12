@@ -8,12 +8,16 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__container main-header__container--index">
+      <div class="main-header__container main-header__container--catalog">
         <div class="main-header__logo-container">
           <a class="main-header__logo-link">
-            <img class="main-header__logo" src="img/header-logotype.svg" width="33" height="37" alt="cat energy.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/header-logotype-desktop.svg" width="202" height="59">
+              <source media="(min-width: 768px)" srcset="img/header-logotype-tablet.svg" width="174" height="52">
+              <img class="main-header__logo" src="img/header-logotype.svg" width="34" height="38" alt="cat energy.">
+            </picture>
           </a>
-          <a class="main-header__word-logo-link">
+          <a class="main-header__word-logo-link main-header__word-logo-link--catalog">
             <img class="main-header__word-logo" src="img/word-logotype.svg" width="101" height="18" alt="cat energy.">
           </a>
           <button class="main-header__toggle main-header__toggle--opened" type="button">
@@ -21,19 +25,17 @@
           </button>
         </div>
         <nav class="main-navigation main-navigation--opened">
-          <div class="main-navigation__wrapper">
             <ul class="main-navigation__list">
-              <li class="main-navigation__item">
+              <li class="main-navigation__item main-navigation__item--catalog">
                 <a class="main-navigation__link" href="index.html">главная</a>
               </li>
-              <li class="main-navigation__item">
+              <li class="main-navigation__item main-navigation__item--catalog">
                 <a class="main-navigation__link" href="catalog.html">каталог продукции</a>
               </li>
-              <li class="main-navigation__item main-navigation__item--current">
+              <li class="main-navigation__item main-navigation__item--current main-navigation__item--catalog">
                 <a class="main-navigation__link" href="form.html">подбор программы</a>
               </li>
             </ul>
-          </div>
         </nav>
       </div>
     </header>
@@ -43,8 +45,7 @@
           Подбор программы
         </h1>
         <p class="program-selection__description">
-          Заполните анкету, и мы подберем
-          программу питания для вашего кота
+          Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
       </div>
       <form class="program-selection__main-form main-form" action="https://echo.htmlacademy.ru/" method="get" >

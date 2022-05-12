@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     border-color: #cdcdcd;
-    padding: 26px 38px 27px 38px;
+    padding: 24px 38px 27px 38px;
 
     &:last-child {
       border: none;
@@ -17,6 +17,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 0 16px 0;
+  }
+}
+
+.additional-product:not(:first-child) {
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
   }
 }
 
@@ -35,6 +45,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,12 +70,15 @@
     line-height: 20px;
     width: 300px;
     justify-content: end;
+    align-self: flex-end;
+    margin-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    align-items: center;
+    align-items: flex-end;
     margin-bottom: 0;
     width: 325px;
+    line-height: 14px;
   }
 }
 
@@ -81,12 +95,17 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .additional-product__price {
   @media (min-width: $tablet-width) {
-    width: 94px;
+    width: 92px;
     text-align: right;
     display: block;
   }
@@ -99,4 +118,59 @@
 
 .additional-product__button {
   width: 245px;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 632px;
+  }
+}
+
+.additional-product--milk .additional-product__quantity-container {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.additional-product--milk .additional-product__description-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.additional-product--milk {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 16px;
+  }
+}
+
+.additional-product:last-child {
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+  }
+}
+
+.additional-product--vitamins .additional-product__quantity-container {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

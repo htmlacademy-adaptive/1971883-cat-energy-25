@@ -15,6 +15,14 @@
   margin: 0 auto;
   padding: 0;
 
+  &--catalog {
+    margin: 0 56px 0 52px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 4px;
   }

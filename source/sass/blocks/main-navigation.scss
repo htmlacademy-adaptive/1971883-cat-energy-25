@@ -8,7 +8,6 @@
     width: 320px;
     background-color: $white;
     text-align: center;
-    border-top: solid 1px #e6e6e6;
 
     @media (min-width: $tablet-width) {
       border-top: none;
@@ -80,10 +79,40 @@
     &--current--index::after {
       background-color: $white;
     }
+
+    &--catalog {
+      padding-bottom: 11px;
+
+      &:first-child {
+        margin-right: 32px;
+      }
+
+      &:nth-child(2) {
+        margin-right: 39px;
+      }
+
+      &::after {
+        bottom: 3px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 12px;
+
+    &--catalog {
+      &:first-child {
+        margin-right: 35px;
+      }
+
+      &:nth-child(2) {
+        margin-right: 35px;
+      }
+
+      &::after {
+        bottom: 4px;
+      }
+    }
   }
 }
 
@@ -97,6 +126,11 @@
       display: flex;
       flex-direction: row;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    padding-bottom: 1px;
   }
 }
 

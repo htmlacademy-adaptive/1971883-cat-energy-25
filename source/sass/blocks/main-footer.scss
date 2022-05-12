@@ -4,6 +4,12 @@
   background-color: $light-grey;
 }
 
+.main-footer--catalog .main-footer__container {
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+}
+
 .main-footer__container {
   margin: 0 auto;
   width: 280px;
