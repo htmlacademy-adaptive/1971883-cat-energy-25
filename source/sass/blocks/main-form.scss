@@ -67,7 +67,7 @@
 }
 
 .main-form__control-radio-item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 13px;
@@ -92,6 +92,10 @@
     width: 38px;
     height: 38px;
   }
+}
+
+.main-form__control-radio-item--weight-loss > .main-form__control-mark {
+  margin-right: 14px;
 }
 
 .main-form__radio-control {
@@ -125,7 +129,7 @@
   color: $white;
   border: none;
   width: 100%;
-  padding: 7px 44px;
+  padding: 10px 44px;
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
@@ -147,6 +151,8 @@
 
 .main-form__important-inputs-description {
   font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
   color: $black;
   text-transform: none;
   margin: 0;
@@ -182,7 +188,7 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-bottom: 23px;
+  padding-bottom: 25px;
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -217,20 +223,37 @@
 
 .main-form__text-field-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
 
-.main-form__text-field-container:not(:last-child) {
-  margin-bottom: 14px;
+  &--name {
+    margin-bottom: 14px;
+  }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+  &--weight {
+    margin-bottom: 16px;
+  }
+
+  &--weight > .main-form__text-field {
+    margin-top: 2px;
+    padding-left: 15px;
+  }
+
+  &--weight > .main-form__legend {
+    margin-right: 17px;
+  }
+
+  &--age > .main-form__legend {
+    margin-right: 16px;
+  }
+
+  &--email {
+    margin-bottom: 16px;
   }
 }
 
 .main-form__text-field {
-  padding: 13px 14px;
+  box-sizing: border-box;
+  padding: 12px 13px 13px 14px;
   width: 100%;
   outline: 1px solid #e7e7e7;
   border: none;
@@ -264,6 +287,16 @@
   margin: 0;
   margin-right: 12px;
   white-space: nowrap;
+  font-size: 16px;
+  line-height: 18px;
+
+  &--name {
+    margin-right: 14px;
+  }
+
+  &--phone {
+    margin-right: 10px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 10px;
@@ -283,7 +316,6 @@
 
     &--phone {
       padding-left: 38px;
-      margin-right: 14px;
 
       @media (min-width: $desktop-width) {
         padding: 0;
@@ -296,7 +328,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   font-size: 20px;
   line-height: 30px;
 
@@ -319,7 +351,7 @@
 .main-form__contacts-client-title {
   position: relative;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   padding: 0;
   color: $black;
   font-size: 24px;
@@ -333,7 +365,7 @@
     background-color: $green;
     width: 99px;
     right: -20px;
-    top: 17px;
+    top: 16px;
 
     @media (min-width: $tablet-width) {
       right: -30px;
@@ -417,7 +449,7 @@
 .main-form__client-comment-title {
   position: relative;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   padding: 0;
   color: $black;
   font-size: 24px;
@@ -432,7 +464,7 @@
     width: 158px;
     background-color: $green;
     right: -20px;
-    top: 15px;
+    top: 14px;
 
     @media (min-width: $tablet-width) {
       width: 478px;
@@ -479,7 +511,9 @@
 }
 
 .main-form__client-comment-field {
-  width: 100%;
+  width: 280px;
+  box-sizing: border-box;
+  height: 150px;
   border: 1px solid #e7e7e7;
   font-family: "Oswald Regular", sans-serif;
   font-weight: normal;
@@ -487,7 +521,11 @@
   line-height: 18px;
   color: $grey;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  padding-top: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     padding: 9px 19px;
@@ -509,7 +547,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 34px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -539,7 +577,7 @@
     width: 136px;
     background-color: $green;
     right: -20px;
-    top: 16px;
+    top: 14px;
 
     @media (min-width: $tablet-width) {
       width: 446px;
