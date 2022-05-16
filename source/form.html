@@ -7,8 +7,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="main-header main-header--catalog">
-      <div class="main-header__container main-header__container--catalog">
+    <header class="main-header main-header--form">
+      <div class="main-header__container main-header__container--form">
         <div class="main-header__logo-container">
           <a class="main-header__logo-link">
             <picture>
@@ -17,22 +17,22 @@
               <img class="main-header__logo" src="img/header-logotype.svg" width="34" height="38" alt="cat energy.">
             </picture>
           </a>
-          <a class="main-header__word-logo-link main-header__word-logo-link--catalog">
+          <a class="main-header__word-logo-link main-header__word-logo-link--form">
             <img class="main-header__word-logo" src="img/word-logotype.svg" width="101" height="18" alt="cat energy.">
           </a>
           <button class="main-header__toggle main-header__toggle--opened" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="main-navigation main-navigation--opened">
+        <nav class="main-navigation main-navigation--opened main-navigation--form">
             <ul class="main-navigation__list">
-              <li class="main-navigation__item main-navigation__item--catalog">
+              <li class="main-navigation__item">
                 <a class="main-navigation__link" href="index.html">главная</a>
               </li>
-              <li class="main-navigation__item main-navigation__item--catalog">
+              <li class="main-navigation__item">
                 <a class="main-navigation__link" href="catalog.html">каталог продукции</a>
               </li>
-              <li class="main-navigation__item main-navigation__item--current main-navigation__item--catalog">
+              <li class="main-navigation__item main-navigation__item--current">
                 <a class="main-navigation__link" href="form.html">подбор программы</a>
               </li>
             </ul>
@@ -105,7 +105,7 @@
               </p>
               <input class="main-form__text-field main-form__text-field--email" type="email" name="client-email" value="kuklachev@gmail.com" required>
             </label>
-            <label class="main-form__text-field-container">
+            <label class="main-form__text-field-container main-form__text-field-container--phone">
               <p class="main-form__legend main-form__legend--phone">
                 Телефон:*
               </p>
@@ -170,7 +170,7 @@
         </div>
       </form>
     </section>
-    <section class="partnership partnership--form">
+    <section class="partnership partnership--catalog">
       <div class="partnership__container">
         <h2 class="partnership__title">
           приглашаем<br>
@@ -178,9 +178,9 @@
           дилеров!
         </h2>
         <p class="partnership__adress">
-          ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург
+          <span class="partnership__street">ул. Большая
+          Конюшенная, д. 19/8</span>
+          <span>Санкт-Петербург</span>
         </p>
       </div>
       <div class="partnership__map-container">

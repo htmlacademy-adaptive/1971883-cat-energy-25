@@ -41,6 +41,21 @@
     @media (min-width: $tablet-width) {
       margin-top: 14px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 42px;
+      padding-bottom: 0;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      margin-top: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 55px;
+    }
   }
 }
 
@@ -99,6 +114,10 @@
 
   &--catalog {
     padding-left: 2px;
+  }
+
+  &--form {
+    padding-top: 10px;
   }
 
   @media (min-width: $tablet-width) {

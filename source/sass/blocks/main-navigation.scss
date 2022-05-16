@@ -29,6 +29,34 @@
     z-index: 1;
     background-color: transparent;
   }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      width: 500px;
+      padding-bottom: 1px;
+    }
+  }
+}
+
+.main-navigation--form > .main-navigation__list {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-right: 1px;
+
+    & > .main-navigation__item::after {
+      bottom: 2px;
+
+      @media (min-width: $desktop-width) {
+        bottom: 4px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & > .main-navigation__item:nth-child(2) {
+      margin-right: 34px;
+    }
+  }
 }
 
 .main-navigation__item {
