@@ -1,3 +1,13 @@
+.main-header {
+  &--catalog {
+    border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
+}
+
 .main-header__container {
   width: 280px;
   display: flex;
@@ -22,6 +32,15 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 53px;
+  }
+
+  &--catalog {
+    padding-bottom: 17px;
+    padding-top: 11px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 14px;
+    }
   }
 }
 
@@ -59,6 +78,16 @@
   }
 }
 
+.main-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .main-header__word-logo-link {
   display: block;
   margin: 0;
@@ -67,6 +96,10 @@
   padding-top: 6px;
   padding-left: 1px;
   max-height: 18px;
+
+  &--catalog {
+    padding-left: 2px;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;

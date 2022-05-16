@@ -1,16 +1,23 @@
 .catalog-show-more {
   margin: 0;
-  padding-top: 59px;
-  padding-bottom: 6px;
+  padding-top: 58px;
+  padding-bottom: 0;
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: center 5px;
 
   @media (min-width: $tablet-width) {
     padding: 159px 0 36px 0;
     background-size: 60px;
-    background-position: center 44px;
+    background-position: center 51px;
     border: solid 2px #cdcdcd;
+    background-image: url("../img/plus-tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center 47px;
+    padding-top: 156px;
+    padding-bottom: 39px;
   }
 }
 
@@ -18,6 +25,7 @@
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
+  padding-left: 1px;
   font-family: "Oswald Regular", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -29,10 +37,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     width: 134px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 2px;
+    padding-top: 1px;
   }
 }
 
@@ -48,11 +58,12 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 87px;
+    margin-bottom: 86px;
     width: 167px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 1px;
   }
 }
 
