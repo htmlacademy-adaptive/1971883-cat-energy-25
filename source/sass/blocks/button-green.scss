@@ -1,4 +1,4 @@
-.button {
+.button-green {
   background-color: $green;
   color: $white;
   text-transform: uppercase;
@@ -8,6 +8,6 @@
   }
 
   &:active {
-    color: rgba($color: #5eaa2f, $alpha: 0.3);
+    color: rgba($color: $white, $alpha: 0.3);
   }
 }

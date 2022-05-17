@@ -68,6 +68,7 @@
 .promo__main-title {
   margin: 0 0 25px 0;
   padding: 0;
+  padding-left: 1px;
   font-family: "Oswald Regular", sans-serif;
   font-weight: normal;
   font-size: 36px;
@@ -89,6 +90,7 @@
 .promo__main-slogan {
   margin: 0;
   padding: 0;
+  padding-right: 2px;
   font-family: "Oswald Regular", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -105,6 +107,7 @@
       text-transform: uppercase;
       width: 290px;
       padding-left: 2px;
+      padding-right: 0;
     }
   }
 

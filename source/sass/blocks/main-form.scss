@@ -325,7 +325,7 @@
 
     &--email {
       box-sizing: border-box;
-      padding: 8.5px 20px 11.5px 20px;
+      padding: 8.5px 50px 11.5px 20px;
     }
   }
 
@@ -490,11 +490,13 @@
   background-image: url("../img/email-icon.svg");
   background-repeat: no-repeat;
   background-position: 183px;
+  padding-right: 40px;
 
   @media (min-width: $tablet-width) {
     background-size: 21px 15px;
     background-position: 511px;
     width: 549px;
+    padding-right: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -507,17 +509,18 @@
   background-repeat: no-repeat;
   background-position: 170px 12px;
   padding-left: 16px;
+  padding-right: 40px;
 
   @media (min-width: $tablet-width) {
     background-position: 497px 14px;
     width: 533px;
-    padding: 8.5px 20px 11.5px 20px;
+    padding: 8.5px 50px 11.5px 20px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     background-position: 434px 14px;
-    padding: 8.5px 22px 13.5px 17px;
+    padding: 8.5px 50px 13.5px 17px;
   }
 }
 

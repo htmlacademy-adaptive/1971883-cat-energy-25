@@ -103,6 +103,16 @@
   }
 }
 
+.main-header__word-logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .main-header__word-logo-link {
   display: block;
   margin: 0;
@@ -111,6 +121,11 @@
   padding-top: 6px;
   padding-left: 1px;
   max-height: 18px;
+
+  &--index {
+    padding-top: 7px;
+    padding-left: 2px;
+  }
 
   &--catalog {
     padding-left: 2px;
@@ -155,6 +170,7 @@
       height: 1px;
       right: 0;
       transform: rotate(45deg);
+      bottom: 11px;
     }
 
     &::after {
@@ -164,6 +180,7 @@
       width: 25px;
       height: 1px;
       right: 0;
+      bottom: 11px;
       transform: rotate(-45deg);
     }
 
