@@ -229,6 +229,11 @@
   }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
 .main-form__text-field-container {
   display: flex;
   align-items: center;
