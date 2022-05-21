@@ -79,6 +79,14 @@
   text-align: center;
   padding: 10px 94px;
 
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba($color: #444444, $alpha: 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     padding: 10px 79px;
     width: 91px;

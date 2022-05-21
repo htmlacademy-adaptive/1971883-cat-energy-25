@@ -94,6 +94,38 @@
 }
 
 .main-header__logo {
+  &--visible-tablet {
+    display: none;
+  }
+
+  &--visible-desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--visible-tablet {
+      display: block;
+    }
+
+    &--visible-phone {
+      display: none;
+    }
+
+    &--visible-desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--visible-tablet {
+      display: none;
+    }
+
+    &--visible-desktop {
+      display: block;
+    }
+  }
+
   &:hover {
     opacity: 0.8;
   }
