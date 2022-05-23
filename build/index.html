@@ -89,7 +89,7 @@
     <header class="main-header">
       <div class="main-header__container main-header__container--index">
         <div class="main-header__logo-container">
-          <a class="main-header__logo-link">
+          <a class="main-header__logo-link" href="index.html">
             <svg class="main-header__logo main-header__logo--visible-phone" width="34" height="38">
               <use xlink:href="#main-header-logo"></use>
             </svg>
@@ -128,6 +128,8 @@
       <section class="promo">
         <div class="promo__container">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo-background-cat-desktop.webp 1x, img/promo-background-cat-desktop@2x.webp 2x" width="720" height="694">
+            <source type="image/webp" width="320" height="302" src="img/promo-background-cat.webp" srcset="img/promo-background-cat@2x.jpg 2x">
             <source media="(min-width: 1440px)" srcset="img/promo-background-cat-desktop.jpg 1x, img/promo-background-cat-desktop@2x.jpg 2x" width="720" height="694">
             <img class="promo__background-cat" width="320" height="302" src="img/promo-background-cat.jpg" srcset="img/promo-background-cat@2x.jpg 2x" alt="Кот облизывается.">
           </picture>
@@ -141,6 +143,9 @@
             </p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop.webp 2x" width="552" height="499">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet.webp 2x" width="709" height="609">
+            <source type="image/webp" src="img/index-can-phone.webp" srcset="img/index-can-phone@2x.webp 2x" width="280" height="270">
             <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop.png 2x" width="552" height="499">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet.png 2x" width="709" height="609">
             <img class="promo__product-image" src="img/index-can-phone.png" srcset="img/index-can-phone@2x.png 2x" width="280" height="270" alt="Банка Cat energy pro со вкусом курицы.">
@@ -245,6 +250,8 @@
         </div>
         <div class="living-example__slider-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 768px)" width="592" height="511" srcset="img/image-cat-tablet.webp 1x, img/image-cat-tablet@2x.webp 2x">
+            <source type="image/webp" src="img/before-mobile.webp" srcset="img/before-mobile@2x.webp 2x" with="280" height="232">
             <source media="(min-width: 768px)" width="592" height="511" srcset="img/image-cat-tablet.png 1x, img/image-cat-tablet@2x.png 2x">
             <img class="living-example__image" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" with="280" height="232" alt="Толстенький кот до диеты.">
           </picture>
