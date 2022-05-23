@@ -45,6 +45,16 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-footer--catalog > .main-footer__container > .main-footer__word-logo-link {
+    padding-top: 7px;
+  }
+
+  .main-footer--catalog > .main-footer__container > .main-footer__social {
+    padding-top: 2px;
+  }
+}
+
 .main-footer__social {
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
@@ -64,6 +74,10 @@
   align-content: center;
   padding-top: 21px;
   padding-bottom: 22px;
+
+  &--index {
+    padding-top: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
