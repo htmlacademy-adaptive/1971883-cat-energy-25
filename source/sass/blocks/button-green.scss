@@ -1,0 +1,13 @@
+.button-green {
+  background-color: $green;
+  color: $white;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+}

@@ -163,6 +163,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/cat-slim-tablet.svg");
     margin-bottom: 30px;
     background-position: 446px 81px;
     background-size: 200px 211px;
@@ -182,6 +183,7 @@
   background-position: 13px 24px;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/cat-muscle-tablet.svg");
     background-position: 412px 91px;
     background-size: 268px 200px;
   }
