@@ -278,7 +278,7 @@
     height: 34px;
     border: 1px solid #cdcdcd;
     border-radius: 50%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
     bottom: 4px;
     left: 266px;
 
@@ -301,8 +301,13 @@
   background-position: center 34px;
 }
 
+.slider-button:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+}
+
 .slider-button:active {
   border-color: $green;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .slider-button:active ~ .living-example__slider-description {
