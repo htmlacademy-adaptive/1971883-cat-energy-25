@@ -70,7 +70,7 @@
   }
 }
 
-.impact-list__leaf {
+.impact-list__item--leaf {
   background-image: url("../img/impact-item-1.svg");
 
   @media (min-width: $tablet-width) {
@@ -91,7 +91,7 @@
   }
 }
 
-.impact-list__powder {
+.impact-list__item--powder {
   background-image: url("../img/impact-item-2.svg");
 
   @media (min-width: $tablet-width) {
@@ -112,7 +112,7 @@
   }
 }
 
-.impact-list__cultery {
+.impact-list__item--cultery {
   background-image: url("../img/impact-item-3.svg");
 
   @media (min-width: $tablet-width) {
@@ -133,7 +133,7 @@
   }
 }
 
-.impact-list__time {
+.impact-list__item--time {
   background-image: url("../img/impact-item-4.svg");
 
   @media (min-width: $tablet-width) {
