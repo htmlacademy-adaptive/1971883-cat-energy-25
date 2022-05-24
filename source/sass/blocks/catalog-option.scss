@@ -21,7 +21,7 @@
   margin-top: 30px;
   margin-left: 91px;
   margin-bottom: 29px;
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -79,7 +79,7 @@
   padding: 0;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -156,7 +156,7 @@
   }
 }
 
-.catalog-option__slim {
+.catalog-option--slim {
   background-image: url("../img/cat-slim.svg");
   background-repeat: no-repeat;
   background-position: 22px 21px;
@@ -177,7 +177,7 @@
   }
 }
 
-.catalog-option__pro {
+.catalog-option--pro {
   background-image: url("../img/cat-muscle.svg");
   background-repeat: no-repeat;
   background-position: 13px 24px;

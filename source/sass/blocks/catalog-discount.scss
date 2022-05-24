@@ -5,6 +5,11 @@
   background-size: cover;
   padding-top: 186px;
   padding-bottom: 27px;
+  background-color: $green;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog-discount-background@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     width: max-content;
@@ -13,15 +18,8 @@
     background-size: 708px 200px;
     z-index: -2;
 
-    &::before {
-      content: "";
-      width: 708px;
-      height: 200px;
-      background-color: rgba(104, 183, 56, 0.85);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-discount-background-tablet@2x.jpg");
     }
   }
 
@@ -29,13 +27,11 @@
     padding: 185px 43px 42px 41px;
     margin: 0;
     align-self: center;
-
-    background-image: url("../img/catalog-discount-background-desktop.png");
+    background-image: url("../img/catalog-discount-background-desktop.jpg");
     background-size: 245px 290px;
 
-    &::before {
-      width: 245px;
-      height: 290px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-discount-background-desktop@2x.jpg");
     }
   }
 

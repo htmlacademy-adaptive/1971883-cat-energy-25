@@ -166,7 +166,7 @@
 }
 
 .main-navigation__link {
-  font-family: "Oswald Medium", sans-serif;
+  font-family: "Oswald Medium", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -175,7 +175,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald Regular", sans-serif;
+    font-family: "Oswald Regular", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
